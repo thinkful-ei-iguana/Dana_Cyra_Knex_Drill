@@ -39,6 +39,20 @@ function paginateProducts(pageNumber) {
 searchByProductName('seitan');
 paginateProducts(2);
 
+
 console.log(
   'knex and driver installed correctly'
 );
+
+function dateProductAdded(daysAgo) {
+  knexInstance
+    .select('*')
+    .from('shopping_list')
+    .where('date_added', '>', 
+    knexInstance.raw(`now() - '?? days'::INTERVAL`, days))
+    .then(result)
+
+
+
+}
+
