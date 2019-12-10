@@ -6,7 +6,7 @@ VALUES
     ('Bluffalo Wings', 5.50, 'Snack',           false,  now() - '21 days'::INTERVAL),
     ('SubstiTuna Salad', 1.24, 'Lunch',         false,  now() - '21 days'::INTERVAL),
     ('Tofurkey', 2.50, 'Breakfast',             false,  now() - '21 days'::INTERVAL),
-    ('Pretenderloins', 9.99, 'Main',  )          false,  now() - '9 days'::INTERVAL),
+    ('Pretenderloins', 9.99, 'Main',            false,  now() - '9 days'::INTERVAL),
     ('Steak-believe', 6.00, 'Main',             false,  now() - '9 days'::INTERVAL),
     ('Kale Seitan', 6.67, 'Breakfast',          false,  now() - '9 days'::INTERVAL),
     ('NoBull Burger', 2.00, 'Snack',            false,  now() - '9 days'::INTERVAL),
