@@ -61,3 +61,21 @@ function dateProductAdded(daysAgo) {
 }
 
 dateProductAdded(5);
+
+function groupByPrice() {
+  knexInstance
+    .select(
+      'category',
+      knexInstance.raw(
+        'ARRAY_AGG(name) products'
+      )
+    )
+    .sum('price')
+    .from('shopping_list')
+    .groupBy('category')
+    .then(result =>
+      console.log(result)
+    );
+}
+
+groupByPrice();
