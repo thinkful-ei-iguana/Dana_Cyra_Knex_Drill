@@ -25,8 +25,8 @@ function searchByProductName(
 
 function paginateProducts(pageNumber) {
   const productsPerPage = 6;
-  const offset = 3;
-  // productsPerPage * (pageNumber - 1);
+  const offset =
+    productsPerPage * (pageNumber - 1);
   knexInstance
     .select('*')
     .from('shopping_list')
